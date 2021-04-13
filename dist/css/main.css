@@ -1,2 +1,2 @@
-*{margin:0;padding:0;border:0}
+header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}header nav ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}header nav ul li a{color:#2d2640}*{margin:0;padding:0;border:0;text-decoration:none;list-style:none;font-family:'Karla', sans-serif}button{cursor:pointer}
 /*# sourceMappingURL=main.css.map */
