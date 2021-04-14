@@ -3,6 +3,7 @@
 
 @import 'config'
 @import 'header'
+@import 'intro'
 
 *
   margin: 0
@@ -24,6 +25,20 @@ button
   letter-spacing: 1.5px
   line-height: 15px
   font-size: 13px
+  transition: all ease-in-out 0.2s
+
+  &.light
+    color: white
+    border-color: white
+
+    &:hover
+      background-color: white
+      color: $primary-dark-violet
+  
+  &.dark
+    &:hover
+      background-color: $primary-dark-violet
+      color: white
 
 a 
   font-size: 13px
@@ -32,3 +47,18 @@ a
   text-align: center
   letter-spacing: 1.5px
   text-transform: uppercase
+
+h1
+  font-family: 'DM Serif Display', serif
+  color: white
+  font-size: 72px
+  font-weight: 400
+  letter-spacing: -1px
+  line-height: 64px
+
+p
+  font-size: 16px
+  font-family: 'Karla', sans-serif
+  line-height: 26px
+  font-weight: 200
+  color: white
