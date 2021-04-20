@@ -5,6 +5,7 @@
   position: relative
 
   .intro-image-right
+    background-image: url('/Starter_Files/images/bg-pattern-intro-right-desktop.svg')
     position: absolute
     z-index: 500
     top: -80px
@@ -65,7 +66,32 @@
     padding: 0
     height: auto
 
-    img
+    .intro-content
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 100%
+      height: 500px
+      padding-top: 93px
+
+      .stylish-line
+        display: none
+
+      h1
+        text-align: center
+        margin-top: 0
+      
+      p
+        text-align: center
+        width: 87%
+
+      button
+        margin-top: 32px
+
+    .intro-image-right
+      background-image: url('/Starter_Files/images/bg-pattern-intro-right-mobile.svg')
+
+    .intro-hero-image
       position: static
       width: 100%
       background-size: cover
