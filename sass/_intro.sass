@@ -5,12 +5,14 @@
   position: relative
 
   .intro-image-right
-    background-image: url('/Starter_Files/images/bg-pattern-intro-right-desktop.svg')
     position: absolute
     z-index: 500
     top: -80px
     right: 0
     width: 435px
+
+  .intro-image-right-mobile
+    display: none
 
   .intro-image-left
     position: absolute
@@ -19,6 +21,9 @@
     left: 0
     width: 194px
     height: 500px
+
+  .intro-image-left-mobile
+    display: none
 
   .intro-content
     width: 540px
@@ -39,17 +44,18 @@
     button
       margin-top: 24px
   
-  img
+  .intro-hero-image
     position: absolute
     top: 105px
     right: 12%
     width: 500px
+    z-index: 700
     transition: width 0.3s ease-in-out
 
 
 @media screen and ( max-width: 1440px )
   .intro
-    img
+    .intro-hero-image
       width: 27%  
 
 @media screen and ( max-width: 1200px )
@@ -57,7 +63,7 @@
     .intro-content
       width: 50%
   
-    img
+    .intro-hero-image
       width: 30%
   
 
@@ -88,11 +94,33 @@
       button
         margin-top: 32px
 
+    .intro-image-right-mobile
+      display: block
+      position: absolute
+      z-index: 500
+      height: 352px
+      width: 123px
+      bottom: -198px
+      right: 0
+
+
+    .intro-image-left-mobile
+      display: block
+      z-index: 500
+      position: absolute
+      bottom: 327px
+      left: 0px
+    
+    .intro-image-left
+      display: none
+    
     .intro-image-right
-      background-image: url('/Starter_Files/images/bg-pattern-intro-right-mobile.svg')
+      display: none
 
     .intro-hero-image
-      position: static
+      position: relative
+      top: 0
+      right: 0
       width: 100%
       background-size: cover
       
