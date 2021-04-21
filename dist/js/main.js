@@ -1,8 +1,12 @@
-function myFunction() {
-  var x = document.getElementById("mobileNav");
-  if (x.className === "mobileNav") {
-    x.className += " open";
+function toggleNav() {
+  var header = document.getElementById("header");
+  var btn = document.getElementById("nav-button");
+  if (header.className === "nav-closed") {
+    header.className = "nav-open";
+    btn.className = "light"
   } else {
-    x.className = "mobileNav";
+    header.className = "nav-closed"
+    btn.className = "dark"
   }
 } 
+

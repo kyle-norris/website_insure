@@ -20,20 +20,24 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="dist/js/main.js"></script>
+
     <title>INSURE</title>
   </head>
   <body>
-    <header>
+    <header id="header" class="nav-closed">
       <img src="Starter_Files/images/logo.svg" alt="Insure" />
       <img
         src="Starter_Files/images/icon-hamburger.svg"
         alt="Open Navigation"
         class="open-nav"
+        onclick="toggleNav()"
       />
       <img
         src="Starter_Files/images/icon-close.svg"
         alt="Close Navigation"
         class="close-nav"
+        onclick="toggleNav()"
       />
       <nav id="topnav" class="topnav">
         <ul>
@@ -41,7 +45,8 @@
           <li><a href="#">Blog</a></li>
           <li><a href="#">Account</a></li>
         </ul>
-        <button class="dark">View Plans</button>
+        <button id="nav-button" class="dark">View Plans</button>
+        <img src="Starter_Files/images/bg-pattern-mobile-nav.svg" alt="" class="mobile-img">
       </nav>
     </header>
 

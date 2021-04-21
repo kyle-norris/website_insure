@@ -9,6 +9,7 @@ header
   position: relative
   background-color: white
 
+
   .open-nav
     display: none
     cursor: pointer
@@ -23,6 +24,9 @@ header
     flex-direction: row
     height: 100%
 
+    .mobile-img
+      display: none
+
     ul
       display: flex
       flex-direction: row
@@ -32,17 +36,61 @@ header
       li
         a
           color: $primary-dark-violet
-          0
+          
 
 
 @media screen and ( max-width: 900px )
   header
-
+    position: fixed
+    width: 100%
     padding: 0 6% 0 6%
 
     .topnav
-      display: none
+      position: fixed
+      width: 100%
+      top: 80px
+      right: -100%
+      height: calc( 100vh - 80px )
+      background-color: #2C2830
+      flex-direction: column
 
-    .open-nav
-      display: block
-  
+      button
+        width: 327px
+        height: 56px
+        font-size: 20px
+
+      ul
+        flex-direction: column
+        padding: 0
+        margin-top: 40px
+        margin-bottom: 20px
+
+        li
+          text-align: center
+          a
+            color: white
+            font-size: 20px
+            line-height: 40px
+
+    &.nav-closed
+      .open-nav
+        display: block
+    
+    &.nav-open
+      .open-nav
+        display: none
+      
+      .close-nav
+        display: block
+
+      .topnav
+        right: 0
+
+        .mobile-img
+          display: block
+          position: absolute
+          bottom: 0
+          right: 0
+          width: 100%
+
+    
