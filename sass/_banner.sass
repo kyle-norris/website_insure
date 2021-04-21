@@ -9,10 +9,36 @@
   padding: 0 81px 0 81px
   position: relative
 
+  h2
+    z-index: 800
+
   button
     z-index: 800
 
-  img
+  .banner-img-desktop
     position: absolute
     top: 0
     right: 0
+
+  .banner-img-mobile
+    display: none
+
+@media screen and ( max-width: 900px )
+  .banner
+    margin: 0 6% 0 6%
+    height: 344px
+    flex-direction: column
+    padding: 72px 24px 72px 24px
+
+    h2
+      text-align: center
+    
+    .banner-img-desktop
+      display: none
+
+    .banner-img-mobile
+      display: block
+      position: absolute
+      top: 0
+      right: 0
+  

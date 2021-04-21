@@ -7,11 +7,14 @@
   margin-top: 150px
 
 
-  .decoration
+  .decoration-desktop
     position: absolute
     top: 0
     left: 0
     z-index: 300
+
+  .decoration-mobile
+    display: none
 
   .footer-header
     z-index: 500
@@ -67,10 +70,38 @@
 
         a
           color: $primary-dark-violet
-          text-decoration-color: 
 
 
 @media screen and ( max-width: 900px )
   .footer
-    .decoration
+    padding: 88px 6% 88px 6%
+    height: auto
+
+    .decoration-desktop
       display: none
+
+    .decoration-mobile
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 300
+      width: 100%
+
+    .footer-header
+      flex-direction: column
+      height: auto
+      gap: 32px
+      margin-bottom: 40px
+
+    .footer-content
+      flex-direction: column
+      gap: 40px
+      align-items: center
+
+      .column
+        h5
+          text-align: center
+        ul
+          li
+            text-align: center
